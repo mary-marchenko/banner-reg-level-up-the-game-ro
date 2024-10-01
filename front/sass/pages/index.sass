@@ -16,16 +16,14 @@ body
   display: flex
 .banner
   position: relative
-  width: 50%
+  width: 100%
   background: url("../img/bg.jpg") no-repeat 50% 100%/cover
   @media screen and (max-width: 1303px)
     background: url("../img/bg-tab.jpg") no-repeat 50% 100%/cover
-  //@media screen and (min-width: 1024px) and (max-width: 1300px) and (orientation: portrait)
-  //  background: url("../img/bg-512х1300.jpg") no-repeat 70% 100%/cover
   display: flex
   flex-direction: column
   align-items: center
-  height: 100%
+  height: calc(var(--vh, 1vh) * 100)
   overflow: hidden
   justify-content: flex-start
   padding-bottom: 50px
@@ -40,7 +38,6 @@ body
   &__title
     width: 59%
   &__txt
-    //margin-top: -95px
     margin-top: -10%
     font-family: $font-suisseIntl-semiB
     font-size: 2.06vw
