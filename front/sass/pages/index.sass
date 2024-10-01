@@ -1,0 +1,55 @@
+$magenta: #FF267E
+$grey: #E3E3E3
+
+$font-suisseIntl-semiB: SuisseIntl-SemiBold, sans-serif
+
+body
+  overscroll-behavior: none
+  img
+    max-width: 100%
+    height: auto
+.wrapper
+  width: 100%
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  position: relative
+  width: 50%
+  background: url("../img/bg.jpg") no-repeat 50% 100%/cover
+  @media screen and (max-width: 1303px)
+    background: url("../img/bg-tab.jpg") no-repeat 50% 100%/cover
+  //@media screen and (min-width: 1024px) and (max-width: 1300px) and (orientation: portrait)
+  //  background: url("../img/bg-512х1300.jpg") no-repeat 70% 100%/cover
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 100%
+  overflow: hidden
+  justify-content: flex-start
+  padding-bottom: 50px
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    width: 100%
+    height: 30%
+    bottom: 0
+    background: linear-gradient(0deg, #000056 0%, rgba(0, 0, 188, 0.00) 100%)
+  &__title
+    width: 59%
+  &__txt
+    //margin-top: -95px
+    margin-top: -10%
+    font-family: $font-suisseIntl-semiB
+    font-size: 2.06vw
+    text-transform: uppercase
+    color: $grey
+    z-index: 1
+    letter-spacing: 3.2px
+    .magenta
+      color: $magenta
+      font-family: $font-suisseIntl-semiB
+      font-size: 2.06vw
+      letter-spacing: 3.2px
